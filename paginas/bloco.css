@@ -1,0 +1,49 @@
+body div:nth-child(1) { /*Instanciando div 1 que é filho do body */
+    width: 250px;
+    height: 100px;
+    background-color:red;
+
+}
+
+body div:nth-child(1):hover ~  div:nth-child(2) { /*Se da hover em div 1, aplica o estilo de div 2 */
+    background-color: aqua;
+   
+}
+
+body div:nth-child(2):hover ~  div div:nth-child(1) { /*Se da hover em div 2, aplica o estilo de div 1 que é filho de div*/
+    background-color: violet;
+   
+}
+
+div div:nth-child(1):hover ~  div:nth-child(2) {   /*Se da hover em div 1 que é filho do div, aplica o estilo de div 2 que é filho de div*/
+    background-color: orange;
+   
+}
+
+body div:nth-child(2) {  /*Instanciando div 2 que é filho do body  */
+    width: 250px;
+    height: 100px;
+    background-color:blue;
+
+}
+
+
+div div:nth-child(1) {    /* Instanciando div 1 que é filho de div 3 */
+    width: 250px;
+    height: 100px;
+    background-color:green;
+
+}
+
+div div:nth-child(2) {    /* Instanciando div 2 que é filho de div 3 */
+    width: 250px;
+    height: 100px;
+    background-color:yellow;
+
+}
+
+
+
+
+
+

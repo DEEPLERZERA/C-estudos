@@ -1,0 +1,6 @@
+body div:nth-child(0) {
+    width: 300px;
+    height: 300px;
+   color:aqua;
+
+}
