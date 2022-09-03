@@ -10,28 +10,18 @@ using System.Windows.Forms;
 
 namespace JokenPo
 {
-    public partial class cenario : Form
+    public partial class Creditos : Form
     {
-        public cenario()
+        public Creditos()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Hide(); 
             Forms1 Forms1 = new Forms1();
-            Forms1.Show();
-        }
-
-        private void pctPapelcomp_Click(object sender, EventArgs e)
-        {
-
+            Forms1.Show();  
         }
     }
 }
