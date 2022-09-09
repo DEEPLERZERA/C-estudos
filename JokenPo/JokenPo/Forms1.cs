@@ -9,12 +9,14 @@ namespace JokenPo
         private void btnJogar_Click(object sender, EventArgs e)
         {
             int jogo;
+            int pontuacao = 0;
             this.Hide();
             cenario cenario = new cenario();
             cenario.Show();
-           
+            
 
-            if(rdoPedra.Checked)
+
+            if (rdoPedra.Checked)
             {
                 cenario.pctPedra.Show();
             }
@@ -40,7 +42,10 @@ namespace JokenPo
                     if (rdoPapel.Checked)
                     {
                         cenario.userwins.Show();
-                      
+                        pontuacao++;
+                        textpontuacao.Text += (pontuacao.ToString());
+
+
                     }
                     if (rdoTesoura.Checked)
                     {
@@ -60,7 +65,9 @@ namespace JokenPo
                     if (rdoTesoura.Checked)
                     {
                         cenario.userwins.Show();
-                      
+                        pontuacao++;
+                        textpontuacao.Text += (pontuacao.ToString());
+
                     }
                     break;
                 case (3):
@@ -68,7 +75,9 @@ namespace JokenPo
                     if (rdoPedra.Checked)
                     {
                         cenario.userwins.Show();
-                       
+                        pontuacao++;
+                        textpontuacao.Text += (pontuacao.ToString());
+
                     }
                     if (rdoPapel.Checked)
                     {
@@ -102,6 +111,11 @@ namespace JokenPo
             this.Hide();
             Creditos Creditos = new Creditos();
             Creditos.Show();
+        }
+
+        private void textpontuacao_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

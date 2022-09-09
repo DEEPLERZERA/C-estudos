@@ -1,27 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Win\\Documents\\JokenPo\\JokenPo\\JokenPo.csproj": {}
+    "C:\\Users\\pizza\\OneDrive\\Documentos\\LPS3SISTEMAS\\JokenPo\\JokenPo\\JokenPo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Win\\Documents\\JokenPo\\JokenPo\\JokenPo.csproj": {
+    "C:\\Users\\pizza\\OneDrive\\Documentos\\LPS3SISTEMAS\\JokenPo\\JokenPo\\JokenPo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Win\\Documents\\JokenPo\\JokenPo\\JokenPo.csproj",
+        "projectUniqueName": "C:\\Users\\pizza\\OneDrive\\Documentos\\LPS3SISTEMAS\\JokenPo\\JokenPo\\JokenPo.csproj",
         "projectName": "JokenPo",
-        "projectPath": "C:\\Users\\Win\\Documents\\JokenPo\\JokenPo\\JokenPo.csproj",
-        "packagesPath": "C:\\Users\\Win\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Win\\Documents\\JokenPo\\JokenPo\\obj\\",
+        "projectPath": "C:\\Users\\pizza\\OneDrive\\Documentos\\LPS3SISTEMAS\\JokenPo\\JokenPo\\JokenPo.csproj",
+        "packagesPath": "C:\\Users\\pizza\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pizza\\OneDrive\\Documentos\\LPS3SISTEMAS\\JokenPo\\JokenPo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Win\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pizza\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows"
+          "net6.0-windows7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
@@ -44,8 +45,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -57,7 +57,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
