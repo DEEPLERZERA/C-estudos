@@ -10,19 +10,12 @@ using System.Windows.Forms;
 
 namespace JokenPo
 {
-    public partial class Creditos : Form
+    public partial class principal : Form
     {
-        int pontoPlayer, pontoComp, pontoEmpate = 0;
-        public Creditos()
+        int pontoPlayer = 0, pontoComp = 0, pontoEmpate = 0;
+        public principal()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide(); 
-            Forms1 Forms1 = new Forms1();
-            Forms1.Show();  
         }
     }
 }

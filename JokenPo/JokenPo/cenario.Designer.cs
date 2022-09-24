@@ -33,13 +33,16 @@
             this.pctPapel = new System.Windows.Forms.PictureBox();
             this.pctTesoura = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.pctTesouracomp = new System.Windows.Forms.PictureBox();
             this.pctPapelcomp = new System.Windows.Forms.PictureBox();
             this.pctPedracomp = new System.Windows.Forms.PictureBox();
             this.pcwins = new System.Windows.Forms.Label();
             this.userwins = new System.Windows.Forms.Label();
             this.empate = new System.Windows.Forms.Label();
+            this.textPontosPlayerCe = new System.Windows.Forms.TextBox();
+            this.textPontosCompCe = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textPontosEmpateCe = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pctPedra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctPapel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctTesoura)).BeginInit();
@@ -82,7 +85,7 @@
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Swis721 BlkCn BT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button2.Location = new System.Drawing.Point(1132, 545);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(229, 113);
@@ -90,17 +93,6 @@
             this.button2.Text = "Fechar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Snap ITC", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(743, 430);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(222, 113);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Voltar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pctTesouracomp
             // 
@@ -138,10 +130,10 @@
             // pcwins
             // 
             this.pcwins.AutoSize = true;
-            this.pcwins.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pcwins.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pcwins.Location = new System.Drawing.Point(582, 158);
             this.pcwins.Name = "pcwins";
-            this.pcwins.Size = new System.Drawing.Size(146, 30);
+            this.pcwins.Size = new System.Drawing.Size(157, 29);
             this.pcwins.TabIndex = 10;
             this.pcwins.Text = "PC VENCEU!";
             this.pcwins.Visible = false;
@@ -149,10 +141,10 @@
             // userwins
             // 
             this.userwins.AutoSize = true;
-            this.userwins.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.userwins.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.userwins.Location = new System.Drawing.Point(571, 158);
             this.userwins.Name = "userwins";
-            this.userwins.Size = new System.Drawing.Size(176, 30);
+            this.userwins.Size = new System.Drawing.Size(191, 29);
             this.userwins.TabIndex = 11;
             this.userwins.Text = "VOCÊ VENCEU!";
             this.userwins.Visible = false;
@@ -160,26 +152,67 @@
             // empate
             // 
             this.empate.AutoSize = true;
-            this.empate.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.empate.Location = new System.Drawing.Point(602, 158);
+            this.empate.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.empate.Location = new System.Drawing.Point(603, 158);
             this.empate.Name = "empate";
-            this.empate.Size = new System.Drawing.Size(107, 30);
+            this.empate.Size = new System.Drawing.Size(112, 29);
             this.empate.TabIndex = 12;
             this.empate.Text = "EMPATE";
             this.empate.Visible = false;
+            this.empate.Click += new System.EventHandler(this.empate_Click);
+            // 
+            // textPontosPlayerCe
+            // 
+            this.textPontosPlayerCe.Location = new System.Drawing.Point(200, 514);
+            this.textPontosPlayerCe.Multiline = true;
+            this.textPontosPlayerCe.Name = "textPontosPlayerCe";
+            this.textPontosPlayerCe.Size = new System.Drawing.Size(100, 23);
+            this.textPontosPlayerCe.TabIndex = 13;
+            this.textPontosPlayerCe.Visible = false;
+            this.textPontosPlayerCe.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // textPontosCompCe
+            // 
+            this.textPontosCompCe.Location = new System.Drawing.Point(354, 514);
+            this.textPontosCompCe.Name = "textPontosCompCe";
+            this.textPontosCompCe.Size = new System.Drawing.Size(100, 23);
+            this.textPontosCompCe.TabIndex = 14;
+            this.textPontosCompCe.Visible = false;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(707, 333);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(200, 95);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Voltar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // textPontosEmpateCe
+            // 
+            this.textPontosEmpateCe.Location = new System.Drawing.Point(541, 514);
+            this.textPontosEmpateCe.Name = "textPontosEmpateCe";
+            this.textPontosEmpateCe.Size = new System.Drawing.Size(100, 23);
+            this.textPontosEmpateCe.TabIndex = 15;
+            this.textPontosEmpateCe.Visible = false;
             // 
             // cenario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1440, 670);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textPontosEmpateCe);
+            this.Controls.Add(this.textPontosCompCe);
+            this.Controls.Add(this.textPontosPlayerCe);
             this.Controls.Add(this.empate);
             this.Controls.Add(this.userwins);
             this.Controls.Add(this.pcwins);
             this.Controls.Add(this.pctPedracomp);
             this.Controls.Add(this.pctPapelcomp);
             this.Controls.Add(this.pctTesouracomp);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pctTesoura);
             this.Controls.Add(this.pctPapel);
@@ -204,12 +237,15 @@
         public PictureBox pctPapel;
         public PictureBox pctTesoura;
         private Button button2;
-        private Button button1;
         public PictureBox pctTesouracomp;
         public PictureBox pctPapelcomp;
         public PictureBox pctPedracomp;
         public Label pcwins;
         public Label userwins;
         public Label empate;
+        private Button button1;
+        public TextBox textPontosEmpateCe;
+        public TextBox textPontosPlayerCe;
+        public TextBox textPontosCompCe;
     }
 }
