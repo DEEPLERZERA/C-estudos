@@ -2,8 +2,7 @@ namespace JokenPo
 {
     public partial class Forms1 : Form
     {
-        int pontoPlayer , pontoComp , pontoEmpate;
-        int pontoPlayerControle, pontoCompControle, pontoEmpateControle;
+        int pontoPlayer = 0, pontoComp = 0, pontoEmpate = 0;
         public Forms1()
         {
             InitializeComponent();
@@ -12,8 +11,8 @@ namespace JokenPo
         private void btnJogar_Click(object sender, EventArgs e)
         {
             int jogo;
-
-            // this.Hide();
+           
+            //this.Hide();
             cenario cenario = new cenario();
             cenario.Show();
             
@@ -45,18 +44,16 @@ namespace JokenPo
                     {
                         cenario.empate.Show();
                         pontoEmpate++;
-                        cenario.textPontosEmpateCe.Text = pontoEmpate.ToString();
                         textPontoEmpate.Text = pontoEmpate.ToString();
                     }
                     if (rdoPapel.Checked)
                     {
                         cenario.userwins.Show();
                         pontoPlayer++;
-                        cenario.textPontosPlayerCe.Text = pontoPlayer.ToString();
                         textPontoPlayer.Text = pontoPlayer.ToString();
+                         
 
-
-
+                        
 
 
 
@@ -66,7 +63,6 @@ namespace JokenPo
                     {
                         cenario.pcwins.Show();
                         pontoComp++;
-                        cenario.textPontosCompCe.Text = pontoComp.ToString();
                         textPontoEnemy.Text = pontoComp.ToString();
                     }
                     break;
@@ -76,21 +72,18 @@ namespace JokenPo
                     {
                         cenario.pcwins.Show();
                         pontoComp++;
-                        cenario.textPontosCompCe.Text = pontoComp.ToString();
                         textPontoEnemy.Text = pontoComp.ToString();
                     }
                     if (rdoPapel.Checked)
                     {
                         cenario.empate.Show();
                         pontoEmpate++;
-                        cenario.textPontosEmpateCe.Text = pontoEmpate.ToString();
                         textPontoEmpate.Text = pontoEmpate.ToString();
                     }
                     if (rdoTesoura.Checked)
                     {
                         cenario.userwins.Show();
                         pontoPlayer++;
-                        cenario.textPontosPlayerCe.Text = pontoPlayer.ToString();
                         textPontoPlayer.Text = pontoPlayer.ToString();
 
 
@@ -103,9 +96,7 @@ namespace JokenPo
                     {
                         cenario.userwins.Show();
                         pontoPlayer++;
-                        cenario.textPontosPlayerCe.Text = pontoPlayer.ToString();
                         textPontoPlayer.Text = pontoPlayer.ToString();
-
 
 
 
@@ -114,14 +105,12 @@ namespace JokenPo
                     {
                         cenario.pcwins.Show();
                         pontoComp++;
-                        cenario.textPontosCompCe.Text = pontoComp.ToString();
                         textPontoEnemy.Text = pontoComp.ToString();
                     }
                     if (rdoTesoura.Checked)
                     {
                         cenario.empate.Show();
                         pontoEmpate++;
-                        cenario.textPontosEmpateCe.Text = pontoEmpate.ToString();
                         textPontoEmpate.Text = pontoEmpate.ToString();
                     }
                     break;
@@ -141,20 +130,7 @@ namespace JokenPo
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (pontoPlayer > pontoComp)
-            {
-                MessageBox.Show("Você venceu!");
-            }
-            if (pontoPlayer < pontoComp)
-            {
-                MessageBox.Show("Você perdeu! :(");
-            }
-            if (pontoPlayer == pontoComp)
-            {
-                MessageBox.Show("Você empatou!");
-            }
             this.Close();
-            
         }
 
         private void button1_Click(object sender, EventArgs e)

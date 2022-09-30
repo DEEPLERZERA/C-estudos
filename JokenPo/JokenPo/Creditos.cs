@@ -12,7 +12,6 @@ namespace JokenPo
 {
     public partial class Creditos : Form
     {
-        int pontoPlayer, pontoComp, pontoEmpate = 0;
         public Creditos()
         {
             InitializeComponent();

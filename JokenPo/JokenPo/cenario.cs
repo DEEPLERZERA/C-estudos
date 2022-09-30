@@ -12,7 +12,7 @@ namespace JokenPo
 {
     public partial class cenario : Form
     {
-        
+        int pontoPlayer = 0;
         public cenario()
         {
             InitializeComponent();
@@ -26,7 +26,9 @@ namespace JokenPo
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            Forms1 Forms1 = new Forms1();
+            Forms1.Show();
            
         }
 
@@ -38,21 +40,6 @@ namespace JokenPo
         private void empate_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            this.Hide();
-            Forms1 Forms1 = new Forms1();
-            Forms1.textPontoPlayer.Text = textPontosPlayerCe.Text;
-            Forms1.textPontoEnemy.Text = textPontosCompCe.Text;
-            Forms1.textPontoEmpate.Text = textPontosEmpateCe.Text;
-            Forms1.Show();
         }
     }
 }

@@ -39,4 +39,3 @@ C:\Users\pizza\OneDrive\Documentos\LPS3SISTEMAS\JokenPo\JokenPo\obj\Debug\net6.0
 C:\Users\pizza\OneDrive\Documentos\LPS3SISTEMAS\JokenPo\JokenPo\obj\Debug\net6.0-windows\JokenPo.genruntimeconfig.cache
 C:\Users\pizza\OneDrive\Documentos\LPS3SISTEMAS\JokenPo\JokenPo\obj\Debug\net6.0-windows\ref\JokenPo.dll
 C:\Users\Win\Documents\JokenPo\JokenPo\obj\Debug\net6.0-windows\JokenPo.principal.resources
-C:\Users\pizza\OneDrive\Documentos\LPS3SISTEMAS\JokenPo\JokenPo\obj\Debug\net6.0-windows\JokenPo.principal.resources
