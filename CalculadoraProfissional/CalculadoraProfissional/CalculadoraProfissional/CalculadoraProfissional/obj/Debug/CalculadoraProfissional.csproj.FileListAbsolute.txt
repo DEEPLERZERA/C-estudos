@@ -1,0 +1,11 @@
+C:\Users\Win\Documents\CalculadoraProfissional\CalculadoraProfissional\CalculadoraProfissional\bin\Debug\CalculadoraProfissional.exe.config
+C:\Users\Win\Documents\CalculadoraProfissional\CalculadoraProfissional\CalculadoraProfissional\bin\Debug\CalculadoraProfissional.exe
+C:\Users\Win\Documents\CalculadoraProfissional\CalculadoraProfissional\CalculadoraProfissional\bin\Debug\CalculadoraProfissional.pdb
+C:\Users\Win\Documents\CalculadoraProfissional\CalculadoraProfissional\CalculadoraProfissional\obj\Debug\CalculadoraProfissional.csproj.AssemblyReference.cache
+C:\Users\Win\Documents\CalculadoraProfissional\CalculadoraProfissional\CalculadoraProfissional\obj\Debug\CalculadoraProfissional.csproj.SuggestedBindingRedirects.cache
+C:\Users\Win\Documents\CalculadoraProfissional\CalculadoraProfissional\CalculadoraProfissional\obj\Debug\CalculadoraProfissional.Form1.resources
+C:\Users\Win\Documents\CalculadoraProfissional\CalculadoraProfissional\CalculadoraProfissional\obj\Debug\CalculadoraProfissional.Properties.Resources.resources
+C:\Users\Win\Documents\CalculadoraProfissional\CalculadoraProfissional\CalculadoraProfissional\obj\Debug\CalculadoraProfissional.csproj.GenerateResource.cache
+C:\Users\Win\Documents\CalculadoraProfissional\CalculadoraProfissional\CalculadoraProfissional\obj\Debug\CalculadoraProfissional.csproj.CoreCompileInputs.cache
+C:\Users\Win\Documents\CalculadoraProfissional\CalculadoraProfissional\CalculadoraProfissional\obj\Debug\CalculadoraProfissional.exe
+C:\Users\Win\Documents\CalculadoraProfissional\CalculadoraProfissional\CalculadoraProfissional\obj\Debug\CalculadoraProfissional.pdb
