@@ -51,7 +51,7 @@ namespace CalculadoraProfissional
             } else if(sinal == "%")
             {
                 r = (x/100) * y;
-            }
+            } 
 
             textBox3.Text = r.ToString();
             
@@ -143,6 +143,14 @@ namespace CalculadoraProfissional
             x = float.Parse(textBox3.Text);
             textBox3.Text = "";
             sinal = "%";
+        }
+
+        private void btn_raiz_Click(object sender, EventArgs e)
+        {
+            x = float.Parse(textBox3.Text);
+            textBox3.Text = "";
+            r = Convert.ToSingle(Math.Sqrt(x));
+            textBox3.Text = r.ToString();
         }
 
         private void btnmulti_Click(object sender, EventArgs e)
