@@ -47,7 +47,8 @@
             this.btndiv = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.btnporcentagem = new System.Windows.Forms.Button();
-            this.btn_raiz = new System.Windows.Forms.Button();
+            this.btn_exp = new System.Windows.Forms.Button();
+            this.btn_bi = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnmais
@@ -257,16 +258,27 @@
             this.btnporcentagem.UseVisualStyleBackColor = true;
             this.btnporcentagem.Click += new System.EventHandler(this.btnporcentagem_Click);
             // 
-            // btn_raiz
+            // btn_exp
             // 
-            this.btn_raiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_raiz.Location = new System.Drawing.Point(860, 407);
-            this.btn_raiz.Name = "btn_raiz";
-            this.btn_raiz.Size = new System.Drawing.Size(76, 63);
-            this.btn_raiz.TabIndex = 25;
-            this.btn_raiz.Text = "√";
-            this.btn_raiz.UseVisualStyleBackColor = true;
-            this.btn_raiz.Click += new System.EventHandler(this.btn_raiz_Click);
+            this.btn_exp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_exp.Location = new System.Drawing.Point(860, 407);
+            this.btn_exp.Name = "btn_exp";
+            this.btn_exp.Size = new System.Drawing.Size(76, 63);
+            this.btn_exp.TabIndex = 25;
+            this.btn_exp.Text = "aⁿ";
+            this.btn_exp.UseVisualStyleBackColor = true;
+            this.btn_exp.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btn_bi
+            // 
+            this.btn_bi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_bi.Location = new System.Drawing.Point(860, 485);
+            this.btn_bi.Name = "btn_bi";
+            this.btn_bi.Size = new System.Drawing.Size(76, 63);
+            this.btn_bi.TabIndex = 26;
+            this.btn_bi.Text = "BI";
+            this.btn_bi.UseVisualStyleBackColor = true;
+            this.btn_bi.Click += new System.EventHandler(this.btn_bi_Click);
             // 
             // Form1
             // 
@@ -274,7 +286,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CalculadoraProfissional.Properties.Resources.c010cc2a29bd22306f0d6b4be0ac286b;
             this.ClientSize = new System.Drawing.Size(1478, 649);
-            this.Controls.Add(this.btn_raiz);
+            this.Controls.Add(this.btn_bi);
+            this.Controls.Add(this.btn_exp);
             this.Controls.Add(this.btnporcentagem);
             this.Controls.Add(this.btndiv);
             this.Controls.Add(this.btnmulti);
@@ -323,7 +336,8 @@
         private System.Windows.Forms.Button btndiv;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button btnporcentagem;
-        private System.Windows.Forms.Button btn_raiz;
+        private System.Windows.Forms.Button btn_exp;
+        private System.Windows.Forms.Button btn_bi;
     }
 }
 

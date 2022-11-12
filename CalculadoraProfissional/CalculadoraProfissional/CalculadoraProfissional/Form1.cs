@@ -51,7 +51,10 @@ namespace CalculadoraProfissional
             } else if(sinal == "%")
             {
                 r = (x/100) * y;
-            } 
+            } else if(sinal == "exp")
+            {
+                r = Convert.ToSingle(Math.Pow(x, y));
+            }
 
             textBox3.Text = r.ToString();
             
@@ -145,12 +148,26 @@ namespace CalculadoraProfissional
             sinal = "%";
         }
 
-        private void btn_raiz_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             x = float.Parse(textBox3.Text);
             textBox3.Text = "";
-            r = Convert.ToSingle(Math.Sqrt(x));
-            textBox3.Text = r.ToString();
+            sinal = "exp";
+        }
+
+        private void btn_bi_Click(object sender, EventArgs e)
+        {
+            int x = int.Parse(textBox3.Text);
+            textBox3.Text = "";
+            string binary = "";
+
+            do
+            {
+                binary = (x % 2) + binary;
+                x /= 2;
+            }
+            while(x > 0);
+            textBox3.Text = binary;
         }
 
         private void btnmulti_Click(object sender, EventArgs e)
